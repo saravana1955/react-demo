@@ -34,4 +34,4 @@ jobs:
           aws-region: ${{ secrets.REGION }}
 
       - name: Sync dist folder to S3
-        run: aws s3 sync dist/ s3://${{ secrets.NAME }}/
+        run: aws s3 sync dist/angular-demo/browser s3://${{ secrets.NAME }}/
